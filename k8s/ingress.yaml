@@ -3,13 +3,13 @@ kind: Ingress
 metadata:
   name: scooty
   namespace: scooter
-annotations: 
-  kubernetes.io/ingress.class: alb
-  alb.ingress.kubernetes.io/scheme: internet-facing
-  alb.ingress.kubernetes.io/target-type: ip
-  alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS": 443}]'
-  alb.ingress.kubernetes.io/ssl-redirect: '443'
-  alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-southeast-1:105100039253:certificate/8b50722e-8b57-4285-aee0-dbca479a1f34
+  annotations: 
+    kubernetes.io/ingress.class: alb
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/target-type: ip
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS": 443}]'
+    alb.ingress.kubernetes.io/ssl-redirect: '443'
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-southeast-1:105100039253:certificate/8b50722e-8b57-4285-aee0-dbca479a1f34
 spec:
   ingressClassName: alb
   rules:
