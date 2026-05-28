@@ -13,7 +13,7 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-  - host: scooty.purnimadevops.online
+  - host: cloud.purnimadevops.online
     http:
       paths:
       - path: /
